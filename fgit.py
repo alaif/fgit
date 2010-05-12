@@ -13,6 +13,15 @@ SCRIPT_USAGE = 'Usage: %prog [options]'
 EXIT_OK = 0
 EXIT_OPTIONS_ERROR = 1
 
+"""
+TODO:
+
+1. proxy command fgit <command> params, in case of when no custom command is not present.
+2. fgit his[tory] [filename] [origos paranetry gitu]  >> git log -p filename 
+3. --show or something like that.. dry run which shows which git equivalent to fgit call.
+4. git log --stat  (Shows change statistics)
+"""
+
 def create_new_branch_synced_with_remote_branch(option, option_string, value, parser):
     " http://book.git-scm.com/4_tracking_branches.html "
     # git branch --track experimental origin/experimental
