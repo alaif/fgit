@@ -56,42 +56,36 @@ if __name__ == '__main__':
     p = OptionParser(usage=SCRIPT_USAGE, version='%prog 0.1')
     # TODO group options via OPtionGroup object.
     p.add_option(
-        '-n', 
         '--new-branch', 
         help='Creates new local branch synced with remote branch (origin/branch_name). Expects branch name.',
         action='callback', 
         callback=create_new_branch_synced_with_remote_branch,
     )
     p.add_option(
-        '-b',
         '--branches',
         help='Prints all branches.',
         action='callback',
         callback=print_branches
     )
     p.add_option(
-        '-w',
         '--switch',
         help='Switch local branch.',
         action='callback',
         callback=switch_branch
     )
     p.add_option(
-        '-s',
         '--status',
         help='Prints status.',
         action='callback',
         callback=print_status
     )
     p.add_option(
-        '-l',
         '--pull',
         help='Git pull',
         action='callback',
         callback=pull
     )
     p.add_option(
-        '-p',
         '--push',
         help='Git push',
         action='callback',
