@@ -25,6 +25,10 @@ TODO:
     git branch mynewbranch
     git push origin mynewbranch
     git branch --track mynewbranch origin/mynewbranch
+
+    >> git newbr[anch] [remote-name/]branch-name
+6. Deleting branch (local or remote accordingly to / is present or not)
+    >> git delbr[anch] [remote-name/]branch-name
 """
 
 def create_new_branch_synced_with_remote_branch(option, option_string, value, parser):
