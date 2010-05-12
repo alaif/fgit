@@ -1,0 +1,12 @@
+# zalozeni nove lokalni vetve, jeji vytvoreni na remote a nastaveni sledovani
+git branch lachtan
+git push origin lachtan
+git branch -d lachtan
+#git branch --track lachtan origin/lachtan
+git checkout --track -b lachtan origin/lachtan
+# navrhovana syntaxe
+git newbr[anch] [remote-name/]branch-name
+git delbr[anch] [remote-name/]branch-name
+
+# smazani vzdalene vetve
+git push origin :lachtan
