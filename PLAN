@@ -1,0 +1,27 @@
+TODO:
+
+0. Use subprocess module function(s) instead of os.system() call.
+1. proxy command fgit <command> params, in case of when no custom command is not present.
+2. fgit his[tory] [filename] [origos paranetry gitu]  >> git log -p filename 
+3. --show or something like that.. dry run which shows which git equivalent to fgit call.
+4. git log --stat  (Shows change statistics)
+5. create new branch (local) and equivalent remote branch via one command.
+    git branch mynewbranch
+    git push origin mynewbranch
+    git branch --track mynewbranch origin/mynewbranch
+
+    >> git newbr[anch] [remote-name/]branch-name
+6. Deleting branch (local or remote accordingly to / is present or not)
+    >> git delbr[anch] [remote-name/]branch-name
+
+~~~~~~~~~~~~
+PLAN:
+Zpusob zapisu (volani) prikazu: fgit novy-prikaz [params]
+Pokud novy-prikaz neumi fgit, preda ho git prikazu.
+Pujde delat aliasy prikazu napr.: create-new-branch >> cb -- pokud mozno
+zkusit pouzit na aliasy stejny system, ktery pouziva git.
+Vytvorit bashcompletition skriptik.
+
+Uvnitr skriptu bude mechanismus na registraci fgit prikazu, jeho argumentu
+a callbacku odbavujiciho prikaz.
+
