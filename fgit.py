@@ -3,7 +3,7 @@
 # This script aims to make git UI more user friendly. 
 # Python 2.4+ is required to run it.
 #
-# Any suggestions and comments are strongly welcomed. E-mail: jonas.fiala@gmail.com
+# Any suggestions and comments are strongly welcomed. E-mail: lachtan@fnet.cz, jonas.fiala@gmail.com
 import sys
 from os import system
 from time import sleep
@@ -29,6 +29,17 @@ TODO:
     >> git newbr[anch] [remote-name/]branch-name
 6. Deleting branch (local or remote accordingly to / is present or not)
     >> git delbr[anch] [remote-name/]branch-name
+
+~~~~~~~~~~~~
+PLAN:
+Zpusob zapisu (volani) prikazu: fgit novy-prikaz [params]
+Pokud novy-prikaz neumi fgit, preda ho git prikazu.
+Pujde delat aliasy prikazu napr.: create-new-branch >> cb -- pokud mozno
+zkusit pouzit na aliasy stejny system, ktery pouziva git.
+Vytvorit bashcompletition skriptik.
+
+Uvnitr skriptu bude mechanismus na registraci fgit prikazu, jeho argumentu
+a callbacku odbavujiciho prikaz.
 """
 
 def create_new_branch_synced_with_remote_branch(option, option_string, value, parser):
