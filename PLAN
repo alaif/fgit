@@ -15,6 +15,7 @@ TODO:
     >> git delbr[anch] [remote-name/]branch-name
 
 7. List of changed files between two revisions (hashes).
+   git show --pretty="format:" --name-only <hash1> <hash2>
 (10:17:14 AM) lachtan: pripad 1) chci videt jaky soubory se zmenily jeste nez udelam merge
 (10:17:29 AM) lachtan: 2) chci videt zmeny mezi dvema revizema v minulosti
 (10:17:45 AM) lachtan: koukam do sveho napovednicku a tam mam jen
